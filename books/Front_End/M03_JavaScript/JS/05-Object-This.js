@@ -11,15 +11,16 @@ function helloThis() {
 
 // TODO: What is `this` referring to here? What will be logged in the console?
 // (This) is referring to the calling object.
+// this is refer to child
 var child = {
   age: 10,
   ageTenYears: function() {
     console.log(this.age + 10);
   }
 };
-this.child.ageTenYears();
 // TODO: What is `this` referring to here? What will be logged in the console?
 // (This) is referring to the calling object.
+// this is refer to investment
 var investor = {
   name: 'Cash Saver',
   investment: {
@@ -29,7 +30,10 @@ var investor = {
     }
   }
 };
-investor.investment.investmentGrowth();
+
 
 // TODO: Call the `helloThis` function and the object methods to check results in the console
 this.helloThis();
+child.ageTenYears();
+investor.investment.investmentGrowth();
+
