@@ -155,6 +155,7 @@ function testAgain() {
 
   document.getElementById("result-container").style.display = "none";
   document.getElementById("quiz-container").style.display = "block";
+  document.getElementById("feedback").textContent = "";
 
   displayQuestion();
   startTimer();
