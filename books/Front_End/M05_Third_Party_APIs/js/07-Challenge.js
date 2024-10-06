@@ -3,7 +3,7 @@ $(document).ready(function () {
     const timeblocks = $('.timeblocks');
   
     // Display current date
-    const today = dayjs().format('dddd, MMMM D');
+    const today = dayjs().format('D, MMMM, dddd');
     currentDay.text(today);
   
     // Business hours
